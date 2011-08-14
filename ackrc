@@ -1,0 +1,20 @@
+--ignore-dir=rails
+--ignore-dir=tmp
+--ignore-dir=log
+--ignore-dir=vendor
+--no-css
+
+--color
+
+# groups the results by file
+--group
+
+# follow symlinks
+--follow
+
+--type-set=haml=.haml
+--type-set=cucumber=.feature
+--type-set=sass=.sass
+--type-add=ruby=.rake,.builder
+--type-add=coffee=.coffee
+--type-add=jst=.mustache,.handlebars,.jst
