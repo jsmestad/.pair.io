@@ -5,3 +5,4 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.4.2.2/jars"
 
 export EDITOR="vim"
 
+export PATH=/usr/local/bin:$PATH
