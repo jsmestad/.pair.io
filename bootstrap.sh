@@ -3,7 +3,7 @@
 # My pairing and pair.io dotfiles bootstrap script.
 #
 # Usage:
-# curl https://raw.github.com/jsmestad/.pair.io/master/bootstrap.sh | sh
+# curl https://raw.github.com/jsmestad/.pair.io/master/bootstrap.sh | /bin/bash
 
 FILES=( bashrc bash_profile zshrc zprofile gemrc railsrc irbrc vimrc.local gvimrc.local tmux.conf janus.rake gitconfig )
 
