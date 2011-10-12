@@ -24,6 +24,9 @@ plugins=(brew osx git git-flow knife rvm gem bundler ruby gem rails3)
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
+unset TMPDIR
+export TMPDIR=/tmp
+
 # Customize to your needs...
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 unsetopt auto_name_dirs

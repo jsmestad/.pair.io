@@ -1,3 +1,6 @@
+" Force 256 Color support
+set t_Co=256
+
 color jellybeans+
 
 " Add Rails, Fugitive, and RVM info to statusline
@@ -6,6 +9,9 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%{rvm#statusline()}%=%-14.(%l
 " map to bufexplorer
 nnoremap <C-B> :BufExplorer<cr>
 let g:bufExplorerShowRelativePath=1
+
+" Disable Syntastic for SASS/SCSS
+let g:syntastic_disabled_filetypes = ['sass', 'scss']
 
 " Set Font
 set guifont=PanicSans:h15
@@ -53,18 +59,6 @@ function! StripTrailingWhitespace()
 endfunction
 autocmd BufWritePre *.md,*.coffee,*.rake,*.js,*.rb,*.css,*.sass,*.scss,*.haml,*.erb,*.cpp,*.hpp,*.i :call StripTrailingWhitespace()
 
-if &term =~ "xterm.*"
-  let &t_ti = &t_ti . "\e[?2004h"
-  let &t_te = "\e[?2004l" . &t_te
-  function XTermPasteBegin(ret)
-    set pastetoggle=<Esc>[201~
-    set paste
-    return a:ret
-  endfunction
-  map <expr> <Esc>[200~ XTermPasteBegin("i")
-  imap <expr> <Esc>[200~ XTermPasteBegin("")
-endif
-
 set suffixesadd=.rb
 set path+=lib/**,test/**
 
@@ -73,3 +67,8 @@ if has("ruby") " assume system has ruby
   let stdlib = system('ruby -rrbconfig -e"print RbConfig::CONFIG[\"rubylibdir\"]"')
   let &l:path = &path . "," . stdlib
 endif
+
+autocmd User Rails Rnavcommand fabricator spec/fabricators -suffix=_fabricator.rb -default=model()
+
+" Spell check some filetypes
+autocmd FileType html,tex,pandoc,markdown setlocal spelllang=en_us spell
