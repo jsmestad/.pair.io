@@ -85,3 +85,6 @@ autocmd User Rails Rnavcommand fabricator spec/fabricators -suffix=_fabricator.r
 
 " Spell check some filetypes
 autocmd FileType html,tex,pandoc,markdown setlocal spelllang=en_us spell
+
+" Open NERDTree if no file specified
+autocmd vimenter * if !argc() | NERDTree | endif

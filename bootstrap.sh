@@ -32,6 +32,7 @@ fi
 
 if [ ! -d ~/.vim ]; then
   echo "Vim configuration missing. Installing."
+  cd $DOT_ROOT && git submodule update --init
   $LINK_FN -s $DOT_ROOT/vimfiles ~/.vim
 fi
 
@@ -43,6 +44,5 @@ for dot_file in "${FILES[@]}"; do
 done
 
 echo "Updating Vim submodules."
-cd $DOT_ROOT && git submodule update --init
 echo "INSTALL COMPLETED. RELOADING THE SHELL."
 exec $SHELL
