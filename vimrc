@@ -8,11 +8,7 @@ set t_Co=256
 color jellybeans+
 
 " Add Rails, Fugitive, and RVM info to statusline
-<<<<<<< HEAD:vimrc
-set statusline=%<%f\ %h%m%r%{rails#statusline()}%{fugitive#statusline()}%{rbenv#statusline()}%=%-14.(%l,%c%V%)\ %P
-=======
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%{rvm#statusline()}%=%-14.(%l,%c%V%)\ %P
->>>>>>> a14c9c2e24349b7e972be3a72f7545e493c884cf:vimrc.local
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%{rbenv#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " map to bufexplorer
 nnoremap <C-B> :BufExplorer<cr>
@@ -42,6 +38,7 @@ end
 imap ii <Esc>
 
 " NERDTree {{{
+  let NERDTreeDirArrows = 0
   let NERDChristmasTree = 1
   let NERDTreeHighlightCursorline = 1
   let NERDTreeShowBookmarks = 1
