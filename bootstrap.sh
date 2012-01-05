@@ -3,9 +3,9 @@
 # My pairing and pair.io dotfiles bootstrap script.
 #
 # Usage:
-# curl https://raw.github.com/jsmestad/.pair.io/master/bootstrap.sh | sh
+# curl https://raw.github.com/jsmestad/.pair.io/master/bootstrap.sh | /bin/bash
 
-FILES=( rbenv bashrc bash_profile zshrc zshenv gemrc vimrc gvimrc tmux.conf gitconfig )
+FILES=( bashrc bash_profile zshrc zprofile zshenv gemrc ackrc vimrc.local gvimrc.local tmux.conf janus.rake gitconfig )
 
 OS=`uname | tr '[A-Z]' '[a-z]'`
 IAM=$(whoami)

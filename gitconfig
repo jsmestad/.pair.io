@@ -3,6 +3,7 @@
   email = justin.smestad@gmail.com
 [github]
   user = jsmestad
+  token = 135f370eba73cd17d31107fe0b5f3ccc
 [alias]
   ci = commit
   co = checkout
@@ -18,14 +19,14 @@
   branch = auto
   diff = auto
   status = auto
-# [merge]
+[merge]
 #     # Include the summary of merged commits into all newly created merge
 #     # commits. The newly created merge commit will contain a one-line summary
 #     # of every (well, most) merged commits.
 #     log = true
 #
-#     # Show merge statistics after merge.
-#     stat = true
+  # Show merge statistics after merge.
+  stat = true
 [branch]
   # When creating a new branch off a remote branch, always set it up to
   # track the remote branch so that we can pull from there.
@@ -52,5 +53,5 @@
   # option set git creates a real merge commit which records the fact that
   # another branch was merged. I find this easier to understand and read in
   # the log.
-  # mergeoptions = --no-commit --no-ff
-  mergeoptions = --no-ff
+  # mergeoptions = --no-commit
+  # mergeoptions = --no-ff
