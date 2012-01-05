@@ -5,7 +5,7 @@
 # Usage:
 # curl https://raw.github.com/jsmestad/.pair.io/master/bootstrap.sh | /bin/bash
 
-FILES=( bashrc bash_profile zshrc zprofile zshenv gemrc ackrc vimrc gvimrc tmux.conf gitconfig rbenv )
+FILES=( bashrc bash_profile zshrc zprofile zshenv gemrc ackrc vimrc gvimrc tmux.conf gitconfig )
 
 OS=`uname | tr '[A-Z]' '[a-z]'`
 IAM=$(whoami)
