@@ -5,7 +5,7 @@
 # Usage:
 # curl https://raw.github.com/jsmestad/.pair.io/master/bootstrap.sh | sh
 
-FILES=( bashrc bash_profile zshrc gemrc railsrc irbrc vimrc.local gvimrc.local tmux.conf janus.rake gitconfig )
+FILES=( rbenv bashrc bash_profile zshrc zshenv gemrc vimrc gvimrc tmux.conf gitconfig )
 
 OS=`uname | tr '[A-Z]' '[a-z]'`
 IAM=$(whoami)
@@ -31,8 +31,8 @@ if [ ! -d ~/.oh-my-zsh ]; then
 fi
 
 if [ ! -d ~/.vim ]; then
-  echo "Vim configuration missing. Installing Janus."
-  git clone git://github.com/carlhuda/janus.git ~/.vim
+  echo "Vim configuration missing. Installing."
+  $LINK_FN -s $DOT_ROOT/vimfiles ~/.vim
 fi
 
 echo "Unlinking any files"
@@ -42,7 +42,7 @@ for dot_file in "${FILES[@]}"; do
   echo "Linking: ~/.$dot_file"
 done
 
-echo "Installing the latest Janus release"
-cd ~/.vim && rake > automated_install.log 2>&1
-echo "Janus run completed. See ~/.vim/automated_install.log for run output."
-echo "INSTALL COMPLETED. PLEASE RELOAD THE SHELL."
+echo "Updating Vim submodules."
+cd ~/.vim && git submodule update --init
+echo "INSTALL COMPLETED. RELOADING THE SHELL."
+exec $SHELL
