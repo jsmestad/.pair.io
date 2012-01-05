@@ -19,15 +19,10 @@ export SHARE_HISTORY="false"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew osx git git-flow knife rvm gem bundler ruby gem rails3)
+plugins=(brew osx git git-flow knife rbenv gem bundler ruby gem rails3)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-unsetopt auto_name_dirs
-
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
-
-__rvm_project_rvmrc

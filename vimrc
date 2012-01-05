@@ -1,3 +1,7 @@
+call pathogen#infect()
+syntax on
+filetype plugin indent on
+
 color jellybeans+
 
 " Add Rails, Fugitive, and RVM info to statusline
