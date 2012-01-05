@@ -5,7 +5,7 @@ filetype plugin indent on
 color jellybeans+
 
 " Add Rails, Fugitive, and RVM info to statusline
-set statusline=%<%f\ %h%m%r%{rails#statusline()}%{fugitive#statusline()}%{rvm#statusline()}%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %h%m%r%{rails#statusline()}%{fugitive#statusline()}%{rbenv#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " map to bufexplorer
 nnoremap <C-B> :BufExplorer<cr>
