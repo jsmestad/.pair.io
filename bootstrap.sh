@@ -9,7 +9,7 @@ FILES=( bashrc bash_profile zshrc zprofile zshenv gemrc ackrc vimrc.local gvimrc
 
 OS=`uname | tr '[A-Z]' '[a-z]'`
 IAM=$(whoami)
-DOT_ROOT=~/.jsmestad-pairio-dotfiles
+DOT_ROOT=~/.dotfiles
 LINK_FN=`which ln`
 UNLINK_FN=`which unlink`
 
@@ -23,7 +23,7 @@ fi
 
 echo "Cloning a fresh set of dotfiles from https://github.com/jsmestad/.pair.io"
 rm -rf $DOT_ROOT
-git clone https://github.com/jsmestad/.pair.io.git ~/.jsmestad-pairio-dotfiles
+git clone https://github.com/jsmestad/.pair.io.git $DOT_ROOT
 
 if [ ! -d ~/.oh-my-zsh ]; then
   echo "ZSH configuration is missing. Installing oh-my-zsh."
@@ -43,6 +43,6 @@ for dot_file in "${FILES[@]}"; do
 done
 
 echo "Updating Vim submodules."
-cd ~/.vim && git submodule update --init
+cd $DOT_ROOT && git submodule update --init
 echo "INSTALL COMPLETED. RELOADING THE SHELL."
 exec $SHELL
