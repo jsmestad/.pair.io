@@ -42,10 +42,18 @@ imap ii <Esc>
   let NERDChristmasTree = 1
   let NERDTreeHighlightCursorline = 1
   let NERDTreeShowBookmarks = 1
-  let NERDTreeIgnore = ['.vim$', '\~$', '.svn$', '\.git$', '.DS_Store']
+  let NERDTreeIgnore = ['\.pyc$', '\.pyo$', '\.rbc$', '\.class$', '\.o', '\~$']
   nmap <F2> :NERDTreeToggle<CR>
   map nt :NERDTreeToggle<CR>
 " }}}
+
+" Syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_quiet_warnings=0
+let g:syntastic_auto_loc_list=2
+
+" Gist
+let g:gist_clip_command = 'pbcopy'
 
 " I dont want backups.
 set nobackup
