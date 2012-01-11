@@ -9,3 +9,6 @@ set guioptions-=T
 if has('gui_macvim')
   set fuoptions=maxvert,maxhorz " Full-screen mode uses the full screen
 endif
+
+" Turn off tooltips
+let g:syntastic_enable_balloons = 0
