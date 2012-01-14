@@ -43,6 +43,7 @@ imap ii <Esc>
   let NERDTreeHighlightCursorline = 1
   let NERDTreeShowBookmarks = 1
   let NERDTreeIgnore = ['\.pyc$', '\.pyo$', '\.rbc$', '\.class$', '\.o', '\~$']
+  let NERDTreeChDirMode = 2
   nmap <F2> :NERDTreeToggle<CR>
   map nt :NERDTreeToggle<CR>
 " }}}
