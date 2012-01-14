@@ -47,10 +47,14 @@ imap ii <Esc>
   map nt :NERDTreeToggle<CR>
 " }}}
 
+" NERDCommenter
+let NERDSpaceDelims = 1
+let NERDRemoveAltComs = 0
+
 " Syntastic
-let g:syntastic_enable_signs=1
-let g:syntastic_quiet_warnings=0
-let g:syntastic_auto_loc_list=2
+let g:syntastic_enable_signs = 1
+let g:syntastic_quiet_warnings = 0
+let g:syntastic_auto_loc_list = 2
 
 " Gist
 let g:gist_clip_command = 'pbcopy'
@@ -70,7 +74,7 @@ function! StripTrailingWhitespace()
   endif
   normal `Z
 endfunction
-autocmd BufWritePre *.md,*.coffee,*.rake,*.js,*.rb,*.css,*.sass,*.scss,*.haml,*.erb,*.cpp,*.hpp,*.i :call StripTrailingWhitespace()
+autocmd BufWritePre *.bldr,*.md,*.coffee,*.rake,*.js,*.rb,*.css,*.sass,*.scss,*.haml,*.erb,*.cpp,*.hpp,*.i :call StripTrailingWhitespace()
 
 set suffixesadd=.rb
 set path+=lib/**,test/**
