@@ -88,6 +88,8 @@ endif
 
 autocmd User Rails Rnavcommand fabricator spec/fabricators -suffix=_fabricator.rb -default=model()
 
+au BufRead,BufNewFile *.bldr set filetype=ruby
+
 " Spell check some filetypes
 autocmd FileType html,tex,pandoc,markdown setlocal spelllang=en_us spell
 
