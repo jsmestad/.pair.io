@@ -5,6 +5,11 @@ filetype plugin indent on
 " Force 256 Color support
 set t_Co=256
 
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
+set expandtab
+
 color jellybeans+
 
 " Add Rails, Fugitive, and RVM info to statusline
