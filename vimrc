@@ -10,6 +10,8 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 
+set number
+
 color jellybeans+
 
 " Add Rails, Fugitive, and RVM info to statusline
