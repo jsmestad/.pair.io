@@ -94,3 +94,6 @@
 [submodule "vimfiles/bundle/pasta"]
 	path = vimfiles/bundle/pasta
 	url = git://github.com/sickill/vim-pasta.git
+[submodule "vimfiles/bundle/yankring"]
+	path = vimfiles/bundle/yankring
+	url = git://github.com/vim-scripts/YankRing.vim.git
