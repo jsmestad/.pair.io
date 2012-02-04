@@ -24,6 +24,9 @@ let g:bufExplorerShowRelativePath=1
 " Disable Syntastic for SASS/SCSS
 let g:syntastic_disabled_filetypes = ['sass', 'scss']
 
+" Disable persisting yankring
+let g:yankring_persist=0
+
 " Set Font
 set guifont=PanicSans:h15
 
