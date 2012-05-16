@@ -91,3 +91,6 @@
 [submodule "vimfiles/bundle/yankring"]
 	path = vimfiles/bundle/yankring
 	url = git://github.com/vim-scripts/YankRing.vim.git
+[submodule "vimfiles/bundle/hammer"]
+	path = vimfiles/bundle/hammer
+	url = git://github.com/matthias-guenther/hammer.vim.git
