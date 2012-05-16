@@ -3,7 +3,6 @@
   email = justin.smestad@gmail.com
 [github]
   user = jsmestad
-  token = 135f370eba73cd17d31107fe0b5f3ccc
 [alias]
   ci = commit
   co = checkout
