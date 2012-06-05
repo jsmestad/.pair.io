@@ -1,5 +1,5 @@
 [user]
-  name = Justin Smestad
+	name = Justin Smestad
   email = justin.smestad@gmail.com
 [github]
   user = jsmestad
@@ -30,6 +30,7 @@
   # When creating a new branch off a remote branch, always set it up to
   # track the remote branch so that we can pull from there.
   autoseupmerge = always
+	autosetupmerge = true
   # mergeoptions = --no-ff
 [branch "master"]
   # This is the list of cmdline options that should be added to git-merge

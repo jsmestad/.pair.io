@@ -94,3 +94,6 @@
 [submodule "vimfiles/bundle/hammer"]
 	path = vimfiles/bundle/hammer
 	url = git://github.com/matthias-guenther/hammer.vim.git
+[submodule "vimfiles/bundle/webapi-vim"]
+	path = vimfiles/bundle/webapi-vim
+	url = git://github.com/mattn/webapi-vim.git
