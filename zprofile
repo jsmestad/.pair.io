@@ -8,3 +8,9 @@ export EDITOR="vim"
 export PATH=/usr/local/bin:$PATH
 
 export DEFER_GC=25
+
+export OPSCODE_USER="jsmestad"
+export ORGNAME="cafewell"
+
+export AWS_ACCESS_KEY_ID="AKIAJSY5DL5KG4ZXYWSQ"
+export AWS_SECRET_ACCESS_KEY="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"

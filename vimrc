@@ -105,3 +105,10 @@ autocmd FileType html,tex,pandoc,markdown setlocal spelllang=en_us spell
 
 " Open NERDTree if no file specified
 autocmd vimenter * if !argc() | NERDTree | endif
+
+" hint to keep lines short                                                      
+if exists('+colorcolumn')                                                       
+  set colorcolumn=80                                                            
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif 
