@@ -3,8 +3,24 @@
 --type-set=scss=.scss
 --type-set=erb=.erb
 
---type-set
-coffeescript=.coffee
+--type-set=coffeescript=.coffee
 
+--type-add=ruby=.haml,.rake,.rsel,.builder
+--type-add=html=.html.erb,.html.haml,.hbs
+--type-add=js=.js.erb
+--type-add=css=.sass,.less,.scss
+--type-add=markdown=.md,.mdown,.markdown
+--type-set=cucumber=.feature
+--ignore-dir=vendor
+--ignore-dir=log
+--ignore-dir=tmp
+--ignore-dir=doc
+--ignore-dir=coverage
 --ignore-dir=node_modules
 --ignore-dir=.bundle
+--sort-files
+--color
+--follow
+--group
+--context=3
+--pager=less -iqRS
