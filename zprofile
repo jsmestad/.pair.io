@@ -6,6 +6,7 @@ export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.4.4.1/jars"
 export EDITOR="vim"
 
 export PATH=/usr/local/bin:$PATH
+export NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}'
 
 export DEFER_GC=25
 

@@ -47,6 +47,9 @@ end
 " Remap jj or jk or to be the same as Esc to leave Insert mode.
 imap ii <Esc>
 
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
+
 " NERDTree {{{
   let NERDTreeDirArrows = 0
   let NERDChristmasTree = 1

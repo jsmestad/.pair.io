@@ -97,3 +97,6 @@
 [submodule "vimfiles/bundle/webapi-vim"]
 	path = vimfiles/bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim.git
+[submodule "vimfiles/bundle/tagbar"]
+	path = vimfiles/bundle/tagbar
+	url = git://github.com/majutsushi/tagbar.git

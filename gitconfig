@@ -57,3 +57,5 @@
   # mergeoptions = --no-ff
 [rerere]
   enabled = true
+[push]
+	default = simple
