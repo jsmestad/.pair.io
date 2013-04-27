@@ -14,6 +14,7 @@
   l = log
 [core]
   editor = vim
+	excludesfile = /Users/justinsmestad/.gitignore_global
 [color]
   branch = auto
   diff = auto
@@ -58,4 +59,4 @@
 [rerere]
   enabled = true
 [push]
-	default = simple
+	default = tracking
