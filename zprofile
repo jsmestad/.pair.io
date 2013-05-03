@@ -7,8 +7,8 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export EDITOR="vim"
 
 # Normal Apps
-#export RUBY_GC_MALLOC_LIMIT=60000000
-#export RUBY_FREE_MIN=200000
+export RUBY_GC_MALLOC_LIMIT=60000000
+export RUBY_FREE_MIN=200000
 
 # Big Apps
 # export RUBY_GC_MALLOC_LIMIT=1000000000

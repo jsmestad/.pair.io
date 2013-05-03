@@ -27,5 +27,4 @@ unsetopt correct_all
 # Customize to your needs...
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
-fpath=($HOME/.zsh/func $fpath)
-typeset -U fpath
+fpath=(/usr/local/share/zsh-completions $fpath)

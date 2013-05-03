@@ -1,3 +1,6 @@
+[submodule "vimfiles/bundle/vim-dispatch"]
+  path = vimfiles/bundle/vim-dispatch
+  url = git://github.com/tpope/vim-dispatch.git
 [submodule "vimfiles/bundle/nerdcommenter"]
 	path = vimfiles/bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
