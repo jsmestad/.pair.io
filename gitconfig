@@ -14,7 +14,7 @@
   l = log
 [core]
   editor = vim
-	excludesfile = /Users/justinsmestad/.gitignore_global
+	excludesfile = /Users/jsadmin/.gitignore
 [color]
   branch = auto
   diff = auto
