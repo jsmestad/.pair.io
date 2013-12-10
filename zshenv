@@ -1,5 +1,6 @@
 export PATH=$HOME/.rbenv/bin:$PATH
-# eval "$(rbenv init --no-rehash - zsh)"
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 [[ -s /Users/jsadmin/.nvm/nvm.sh ]] && . /Users/jsadmin/.nvm/nvm.sh # This loads NVM
 
