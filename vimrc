@@ -1,4 +1,4 @@
-call pathogen#infect('~/.dotfiles/vimfiles/bundle')
+call pathogen#infect('~/.dotfiles/vimfiles/bundle/{}')
 syntax on
 filetype plugin indent on
 
