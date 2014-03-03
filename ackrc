@@ -6,9 +6,9 @@
 --type-set=coffeescript=.coffee
 
 --type-add=ruby=.haml,.rake,.rsel,.builder
---type-add=html=.html.erb,.html.haml,.hbs
---type-add=js=.js.erb
---type-add=css=.sass,.less,.scss
+--type-add=html=.html.erb,.html.haml,.hbs,.mustache
+--type-add=js=.js.erb,.js.haml
+--type-add=css=.sass,.less,.scss,.css.scss,.css.sass
 --type-add=markdown=.md,.mdown,.markdown
 --type-set=cucumber=.feature
 --ignore-dir=vendor
@@ -24,3 +24,4 @@
 --group
 --context=3
 --pager=less -iqRS
+
