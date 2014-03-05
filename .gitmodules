@@ -115,3 +115,6 @@
 [submodule "vimfiles/bundle/vim-rake"]
 	path = vimfiles/bundle/vim-rake
 	url = git://github.com/tpope/vim-rake.git
+[submodule "vimfiles/bundle/rainbow_parentheses"]
+	path = vimfiles/bundle/rainbow_parentheses
+	url = https://github.com/kien/rainbow_parentheses.vim.git
